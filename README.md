@@ -4,7 +4,10 @@
 
 ## List comprehensions
 
+```
 loud_short_planets = [planet.upper() + '!' for planet in planets if len(planet) < 6]
+```
+
 ## Underfitting & Overfitting
 
 ![uo](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/29de5db8-3d00-4b2a-b998-5a7a7fe43a12)
@@ -19,7 +22,9 @@ Modelin verilerdeki temel örüntüleri yakalamak için çok basit olması ve bu
 ## Overfitting
 
 Model, eğitim için kullanılan veri seti üzerinde gereğinden fazla çalışıp ezber yapmaya başlamışsa ya da eğitim seti tek düze ise overfitting olma riski büyük demektir.
+
 ![uo.PNG](attachment:uo.PNG)
+
 # Pandas
 
 ## iloc & loc
@@ -43,19 +48,19 @@ Bilgi teorisi alanından gelen ortaklı bilgi (mutual information), bilgi kazan�
 
 Ortaklı bilgi iki değişken arasında hesaplanır ve diğer değişkenin bilinen bir değeri verildiğinde bir değişken için belirsizlikteki azalmayı ölçer.
 
-'''python
-# import the required functions and object.
+'''
+#import the required functions and object.
 from sklearn.feature_selection import mutual_info_classif
 from sklearn.feature_selection import SelectKBest
 
-# Kalmasını istediğiniz değişken sayısı
+#Kalmasını istediğiniz değişken sayısı
 select_k = 10
 
-# Değişkenlerin seçim stratejisi belirlenir
-# mutual_info_classif = ortalı bilgi yönteminin kullanılmasıdır
+#Değişkenlerin seçim stratejisi belirlenir
+#mutual_info_classif = ortalı bilgi yönteminin kullanılmasıdır
 selection = SelectKBest(mutual_info_classif, k=select_k).fit(x_train, y_train)
 
-# İlişkili olan değişkenler gösterilir.
+#İlişkili olan değişkenler gösterilir.
 features = x_train.columns[selection.get_support()]
 print(features)
 
