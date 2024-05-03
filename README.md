@@ -170,6 +170,7 @@ Bir nesneyi başka bir nesnenin içine gömmek, yerleştirmek.
 # LLM Bootcamp
 
 - Deploying an MVP
+  
 ![llm1](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/c6d6b628-4384-4487-a848-e28d29d70214)
 
 -
