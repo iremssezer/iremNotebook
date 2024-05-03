@@ -48,7 +48,7 @@ Bilgi teorisi alanından gelen ortaklı bilgi (mutual information), bilgi kazan�
 
 Ortaklı bilgi iki değişken arasında hesaplanır ve diğer değişkenin bilinen bir değeri verildiğinde bir değişken için belirsizlikteki azalmayı ölçer.
 
-'''
+```
 #import the required functions and object.
 from sklearn.feature_selection import mutual_info_classif
 from sklearn.feature_selection import SelectKBest
@@ -74,7 +74,7 @@ def make_mi_scores(X, y, discrete_features):
 
 mi_scores = make_mi_scores(X, y, discrete_features)
 mi_scores[::3]  # show a few features with their MI scores
-'''
+```
 
 ## Outlier Detection
 Aykırı Gözlem
@@ -92,7 +92,7 @@ Farklı kümelerdeki veri noktaları çok farklıyken, aynı alt gruptaki (küme
 
 Unsupervised learning (gözetimsiz öğrenme) ve kümeleme algoritmasıdır.
 
-'''python
+```
 kmeans = KMeans(n_clusters=6)
 X["Cluster"] = kmeans.fit_predict(X)
 X["Cluster"] = X["Cluster"].astype("category")
@@ -101,10 +101,11 @@ X.head()
 sns.relplot(
     x="Longitude", y="Latitude", hue="Cluster", data=X, height=6,
 );
-'''
+```
 
 
 ![k2](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/aa4c4326-48b9-4a25-a42f-26e0e16d4b11)
+
 ## Deep Leaarning
 
 Derin Öğrenme bir makine öğrenme yöntemidir. 
@@ -120,7 +121,7 @@ Yapay zekayı eğitmek için hem denetimli hem de denetimsiz öğrenme kullanıl
 Scaling (ölçeklendirme) verilerin aralığını değiştirir.
 
 
-'''python
+```python
 # generate 1000 data points randomly drawn from an exponential distribution
 original_data = np.random.exponential(size=1000)
 
@@ -134,7 +135,7 @@ ax[0].set_title("Original Data")
 sns.histplot(scaled_data, ax=ax[1], kde=True, legend=False)
 ax[1].set_title("Scaled data")
 plt.show()
-'''
+```
 
 
 ![s1](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/4439facc-867d-48f1-9701-ade0d09c1956)
@@ -143,7 +144,7 @@ plt.show()
 
 Verilerin dağıtım şeklini değiştirir.
 
-'''python
+```python
 # normalize the exponential data with boxcox
 normalized_data = stats.boxcox(original_data)
 
@@ -154,7 +155,7 @@ ax[0].set_title("Original Data")
 sns.histplot(normalized_data[0], ax=ax[1], kde=True, legend=False)
 ax[1].set_title("Normalized data")
 plt.show()
-'''
+```
 
 ![normalized_data](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/825475f0-52d2-4051-b527-58f4eb1160be)
 
@@ -165,6 +166,7 @@ Bir nesneyi başka bir nesnenin içine gömmek, yerleştirmek.
 ![Embedding](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*SYiW1MUZul1NvL1kc1RxwQ.png)
 
 ---
+
 # LLM Bootcamp
 
 ![llm1](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/c6d6b628-4384-4487-a848-e28d29d70214)
@@ -188,7 +190,7 @@ Bir nesneyi başka bir nesnenin içine gömmek, yerleştirmek.
 ![image](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/1a0870be-b41c-4d15-9bef-bed132df511d)
 
 
-'''python
+```python
 prompt = f"""
 Your task is to answer in a consistent style.
 
@@ -203,7 +205,7 @@ the most intricate tapestry begins with a solitary thread.
 """
 response = get_completion(prompt)
 print(response)
-'''
+```
 
 
 ---
@@ -220,7 +222,7 @@ print(response)
 
 ![t1](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/9d96ea8c-5633-4041-94ac-af7d86325178)
 
-'''python
+```python
 Delimiters can be anything like: ```, """, < >, <tag> </tag>
 text = f"""
 You should express what you want a model to do by \ 
@@ -241,6 +243,6 @@ into a single sentence.
 """
 response = get_completion(prompt)
 print(response)
-'''
+```
 
 ---
