@@ -169,12 +169,16 @@ Bir nesneyi başka bir nesnenin içine gömmek, yerleştirmek.
 
 # LLM Bootcamp
 
+-
 ![llm1](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/c6d6b628-4384-4487-a848-e28d29d70214)
 
+-
 ![llm2](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/8e780dce-d81d-43d6-9bf4-013649d901d3)
 
+-
 ![llm3](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/db4b9412-b616-4063-9159-17c83556ef2b)
 
+-
 ![llm4](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/11f23374-376e-4a76-80ca-9e5eb89683ad)
 
 ## Zero Shot
