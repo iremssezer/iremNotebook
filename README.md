@@ -4,7 +4,7 @@
 
 ## List comprehensions
 
-```
+```python
 loud_short_planets = [planet.upper() + '!' for planet in planets if len(planet) < 6]
 ```
 
@@ -22,8 +22,6 @@ Modelin verilerdeki temel örüntüleri yakalamak için çok basit olması ve bu
 ## Overfitting
 
 Model, eğitim için kullanılan veri seti üzerinde gereğinden fazla çalışıp ezber yapmaya başlamışsa ya da eğitim seti tek düze ise overfitting olma riski büyük demektir.
-
-![uo.PNG](attachment:uo.PNG)
 
 # Pandas
 
@@ -48,7 +46,7 @@ Bilgi teorisi alanından gelen ortaklı bilgi (mutual information), bilgi kazan�
 
 Ortaklı bilgi iki değişken arasında hesaplanır ve diğer değişkenin bilinen bir değeri verildiğinde bir değişken için belirsizlikteki azalmayı ölçer.
 
-```
+```python
 #import the required functions and object.
 from sklearn.feature_selection import mutual_info_classif
 from sklearn.feature_selection import SelectKBest
@@ -92,7 +90,7 @@ Farklı kümelerdeki veri noktaları çok farklıyken, aynı alt gruptaki (küme
 
 Unsupervised learning (gözetimsiz öğrenme) ve kümeleme algoritmasıdır.
 
-```
+```python
 kmeans = KMeans(n_clusters=6)
 X["Cluster"] = kmeans.fit_predict(X)
 X["Cluster"] = X["Cluster"].astype("category")
