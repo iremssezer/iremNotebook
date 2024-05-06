@@ -192,6 +192,31 @@ Bir nesneyi başka bir nesnenin içine gömmek, yerleştirmek.
 
 ![image](https://github.com/iremssezer/iremSezerNotebook/assets/74788732/1a0870be-b41c-4d15-9bef-bed132df511d)
 
+## Chain-of-Thought Prompting
+
+![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fheidloff.net%2Farticle%2Fchain-of-thought%2F&psig=AOvVaw0a3Cyq4FDkALZqWp-hPrgW&ust=1715062447502000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiZr9Ov-IUDFQAAAAAdAAAAABAE)
+
+## Self-Consistency Prompting
+
+[image](https://www.google.com/url?sa=i&url=https%3A%2F%2Flearnprompting.org%2Fdocs%2Fintermediate%2Fself_consistency&psig=AOvVaw1T1PhDJAzHRHGe-ylwiAdr&ust=1715062568438000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjM04yw-IUDFQAAAAAdAAAAABAJ)
+
+## Generated Knowledge Prompting
+
+[image](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fak92501%2Fstatus%2F1450315724803780608&psig=AOvVaw0uvHfIEFwJZCbK36iCzYMT&ust=1715062639758000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMiyurOw-IUDFQAAAAAdAAAAABAJ)
+
+## Prompt Chaining
+[image](https://www.google.com/url?sa=i&url=https%3A%2F%2Faigenealogyinsights.com%2F2023%2F06%2F13%2Fthe-power-of-a-i-genealogical-prompt-chaining%2F&psig=AOvVaw0yz0eq7yK0qQ4CinxeqSea&ust=1715062735724000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDU196w-IUDFQAAAAAdAAAAABAE)
+
+## Tree of Thoughts (ToT)
+
+[image](https://www.promptingguide.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTOT.3b13bc5e.png&w=1200&q=75)
+
+## Retrieval Augmented Generation (RAG)
+
+[image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdeepgram.com%2Fai-glossary%2Fretrieval-augmented-generation&psig=AOvVaw05OVUo67aeNGCMchNNTDDI&ust=1715063743757000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLD7ib60-IUDFQAAAAAdAAAAABAx)
+
+
+
 
 ```python
 prompt = f"""
